@@ -1,0 +1,26 @@
+body{
+  margin-left: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+.container{
+  display: flex;
+}
+
+.one {
+  flex-direction: column;
+  justify-content: center;
+  height:100%;
+  width: 100%;
+}
+
+.buynow {
+  border-color: black;
+  border-top: 5%;
+  border-bottom: 5%;
+  padding: 0 5% 0 5%;
+}
