@@ -20,12 +20,15 @@ class App extends Component {
     return (
       <div className="App">
         <div className="container one">
+          <div id = "text-1">
           <h1>DJI - SPARK</h1>
           <p>A drone that designed for everyone, especially for you</p>
           <p>Making your own breath taking video,</p>
           <p>like a Pro</p>
           <a id="buy-it-now" href ="https://elisa.fi/kauppa/#!/laitteet/muut-laitteet/DJI-Spark--drone">Buy it now</a>
+          </div>
         </div>
+
         <div className="container two">
           <div id="text-2">
             <p>
@@ -40,30 +43,35 @@ class App extends Component {
             <a href="https://elisa.fi/kauppa/#!/laitteet/muut-laitteet/DJI-Spark--drone">buy it now</a>
           </div>
           <div id="text-3">
+            <div>
             <span>Perfect for any occasion</span>
             <p>From birthdays and weddings to sports and travelings. Dji spark is always your perfect choice to record your best and extraordinary memories.
             </p>
           </div>
-          <img src={img}/>
+          </div>
           <div id = "button-4">
-          <a href = "https://elisa.fi/kauppa/#!/laitteet/muut-laitteet/DJI-Spark--drone">buy it now</a>
+            <a href = "https://elisa.fi/kauppa/#!/laitteet/muut-laitteet/DJI-Spark--drone">buy it now</a>
           </div>
+          <img src={img}/>
       </div>
-        <Gallery/>
-        <div className="container three">
-          <img src={img2}/>
-          <div id = "text-4">
-            <span id = "price">16.92€</span><span id = "month"> /Month</span>
-            <p><span>Buy it now from Elisa webshop </span></p>
-            <a href ="https://elisa.fi/kauppa/#!/laitteet/muut-laitteet/DJI-Spark--drone">Buy it now</a>
-          </div>
+
+      <div className="container three">
+        <div id = "text-4">
+          <span id = "price">16.92€</span><span id = "month"> /Month</span>
+          <p><span>Buy it now from Elisa webshop </span></p>
+          <a href ="https://elisa.fi/kauppa/#!/laitteet/muut-laitteet/DJI-Spark--drone">Buy it now</a>
         </div>
-        <div id = "credit">
-          <p>Elisa UX Design prototype Test A  #Yuexin Du</p>
-        </div>
+        <img src={img2}/>
+      </div>
+      <div id = "credit">
+        <p>Elisa UX Design prototype Test A  #Yuexin Du</p>
+      </div>
       </div>
     );
   }
 }
 
 export default App;
+
+
+// <Gallery/>
