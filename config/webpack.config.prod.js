@@ -12,6 +12,7 @@ const eslintFormatter = require('react-dev-utils/eslintFormatter');
 const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
 const paths = require('./paths');
 const getClientEnvironment = require('./env');
+const WebpackStrip = require('strip-loader')
 
 // Webpack uses `publicPath` to determine where the app is being served from.
 // It requires a trailing slash, or the file assets will get an incorrect path.
@@ -216,6 +217,10 @@ module.exports = {
           // When you `import` an asset, you get its filename.
           // This loader don't uses a "test" so it will catch all modules
           // that fall through the other loaders.
+          {
+            test:/\.js$/,
+            loader: WebpackStrip.loader('console.log')
+          },
           {
             loader: require.resolve('file-loader'),
             // Exclude `js` files to keep "css" loader working as it injects
