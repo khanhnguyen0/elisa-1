@@ -23,8 +23,8 @@ class App extends Component {
           <div id = "text-1">
           <h1>DJI - SPARK</h1>
           <p>A drone that designed for everyone, especially for you</p>
-          <p>Making your own breath taking video,</p>
-          <p>like a Pro</p>
+          <p>Making your own breath taking video, like a Pro</p>
+          <p></p>
           <a id="buy-it-now" href ="https://elisa.fi/kauppa/#!/laitteet/muut-laitteet/DJI-Spark--drone">Buy it now</a>
           </div>
         </div>
@@ -44,15 +44,23 @@ class App extends Component {
           </div>
           <div id="text-3">
             <div>
-            <span>Perfect for any occasion</span>
-            <p>From birthdays and weddings to sports and travelings. Dji spark is always your perfect choice to record your best and extraordinary memories.
-            </p>
+              <span>Any time, any where. </span>
+              <p>DJI Spark helps you take the perfect picture with the perfect angles.
+              </p>
           </div>
           </div>
           <div id = "button-4">
             <a href = "https://elisa.fi/kauppa/#!/laitteet/muut-laitteet/DJI-Spark--drone">buy it now</a>
           </div>
           <img src={img}/>
+      </div>
+      <div className = "container four">
+        <div id = "text-5">
+          <span>Perfect for any occasion</span>
+          <p>From birthdays and weddings to sports and travelings. Dji spark is always your perfect choice to record your best and extraordinary memories.
+          </p>
+        </div>
+        <Gallery/>
       </div>
 
       <div className="container three">
@@ -72,6 +80,3 @@ class App extends Component {
 }
 
 export default App;
-
-
-// <Gallery/>

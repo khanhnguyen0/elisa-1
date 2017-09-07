@@ -113,7 +113,7 @@
 // div {
 //   margin: 0;
 // }
-//
+// //
 // #buy-it-now {
 //   margin-top: 10px;
 //   border-style:solid;
@@ -266,8 +266,18 @@ body {
     }
 
     a {
-      margin-top: 4vh;
-      display: inline-block;
+      margin-top: 5%;
+      display: inline-block !important;
+      // margin-top: 10px;
+      border-style:solid;
+      padding: 1% 4%;
+      /* padding: 5px 0 5px 0; */
+      display: inline;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+      cursor: pointer;
+      border-width: thin;
     }
   }
 }
@@ -370,10 +380,39 @@ body {
     object-fit: contain;
     max-width:100%;
   }
+  #credit{
+    text-align: center;
+    color: white;
+    margin-top: -8%;
+  }
 }
 
-#credit{
-  text-align: center;
-  color: white;
-  margin-top: -8%;
+.four{
+  flex: 1 1 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  #text-5{
+    margin-top:-20%;
+    width: 50%;
+    flex:1;
+    font-size: 1.2;
+    span{
+      font-size: 1.5em;
+    }
+    padding-left: 5%;
+    padding-right: 25%;
+    box-sizing:border-box;
+  }
+}
+
+#price{
+  font-family: 'gothic-bold';
+  font-size: 4em;
+}
+
+#month {
+  font-size: 2em;
 }
