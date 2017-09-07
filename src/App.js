@@ -62,9 +62,9 @@ class App extends Component {
           <a href ="https://elisa.fi/kauppa/#!/laitteet/muut-laitteet/DJI-Spark--drone">Buy it now</a>
         </div>
         <img src={img2}/>
-      </div>
-      <div id = "credit">
-        <p>Elisa UX Design prototype Test A  #Yuexin Du</p>
+        <div id = "credit">
+          <p>Elisa UX Design prototype Test A  #Yuexin Du</p>
+        </div>
       </div>
       </div>
     );
